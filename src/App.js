@@ -1,7 +1,7 @@
 import "./App.css";
 import { Header } from "./components/Header";
-import { TransactionList } from "./components/TransactionList";
-import { AddTransaction } from "./components/AddTransaction";
+import { TransactionList } from "./components/FriendsList";
+import { AddFriends } from "./components/AddFriends";
 import { GlobalProvider } from "./context/GlobalState";
 import { Footer } from "./components/Footer";
 
@@ -10,7 +10,7 @@ function App() {
     <GlobalProvider>
       <Header />
       <div className="container">
-        <AddTransaction />
+        <AddFriends />
         <TransactionList />
       </div>
       <Footer></Footer>
