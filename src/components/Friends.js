@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 
-export const Transaction = ({ transaction }) => {
+export const Friends = ({ transaction }) => {
   const { deleteTransaction, transactions } = useContext(GlobalContext);
 
   function updateLocalStorage() {
