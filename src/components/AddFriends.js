@@ -3,7 +3,7 @@ import { GlobalContext } from "../context/GlobalState";
 
 export const AddFriends = () => {
   const [text1, setText1] = useState("");
-  const { addTransaction, transactions } = useContext(GlobalContext);
+  const { addTransaction } = useContext(GlobalContext);
 
   const onSubmit = (e) => {
     e.preventDefault();
