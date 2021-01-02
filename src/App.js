@@ -1,6 +1,6 @@
 import "./App.css";
 import { Header } from "./components/Header";
-import { TransactionList } from "./components/FriendsList";
+import { FriendsList } from "./components/FriendsList";
 import { AddFriends } from "./components/AddFriends";
 import { GlobalProvider } from "./context/GlobalState";
 import { Footer } from "./components/Footer";
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <div className="container">
         <AddFriends />
-        <TransactionList />
+        <FriendsList />
       </div>
       <Footer></Footer>
     </GlobalProvider>

@@ -4,6 +4,12 @@ import { Friends } from "./Friends";
 
 export const FriendsList = () => {
   const { transactions } = useContext(GlobalContext);
+  updateLocalStorage();
+
+  function updateLocalStorage() {
+    localStorage.setItem("transactions", JSON.stringify(transactions));
+  }
+
   return (
     <>
       <h3>History</h3>

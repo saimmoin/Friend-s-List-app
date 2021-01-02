@@ -5,10 +5,6 @@ export const AddFriends = () => {
   const [text1, setText1] = useState("");
   const { addTransaction, transactions } = useContext(GlobalContext);
 
-  function updateLocalStorage() {
-    localStorage.setItem("transactions", JSON.stringify(transactions));
-  }
-
   const onSubmit = (e) => {
     e.preventDefault();
 
@@ -21,7 +17,6 @@ export const AddFriends = () => {
     } else {
       addTransaction(newTransaction);
       setText1("");
-      updateLocalStorage();
       alert("Friend Added Successfully");
     }
   };
